@@ -15,8 +15,7 @@
         return 0;
     int count = 0;
     for (id object in array){
-        int obj_int = [object intValue];
-        if (obj_int % 2){
+        if ([object intValue] % 2){
             count++;
         }
     }
