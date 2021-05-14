@@ -8,9 +8,8 @@
     
     for (int i=0; i<[self length]; i++){
         unichar a = [self characterAtIndex:i];
-        if (a<=57 && a>=48)
-            continue;
-        return false;
+        if (a>57 || a<48)
+            return false;
     }
     return true;
 }
